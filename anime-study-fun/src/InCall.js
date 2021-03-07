@@ -28,10 +28,24 @@ const InCall = () => {
             
             <div id="parent">
                 <Row className="d-flex justify-content-around">
-                    <iframe id="other" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" allow="autoplay" frameborder="0" ></iframe>
+                    <iframe
+                        id="other"
+                        src="https://player.twitch.tv/?channel=ahappihill&parent=localhost&muted=true&autoplay=true"
+                        height="720"
+                        width="1280"
+                        allowfullscreen="true">
+                    </iframe>
+                    {/* <iframe id="other" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" allow="autoplay" frameborder="0" ></iframe> */}
                 </Row>
                 <div id="child">
-                    <iframe id="self" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" allow="autoplay" frameborder="0" ></iframe>
+                    <iframe
+                        id="self"
+                        src="https://player.twitch.tv/?channel=eatmyshurikenlol&parent=localhost&autoplay=true"
+                        height="720"
+                        width="1280"
+                        allowfullscreen="true">
+                    </iframe>
+                    {/* <iframe id="self" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" allow="autoplay" frameborder="0" ></iframe> */}
                 </div>
             </div>  
 
