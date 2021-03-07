@@ -24,7 +24,7 @@ const RoomCard = (props) => {
                     </div>
                     
                 </Card.Text>
-                <button className="joinButton" onClick={() => changeRoute("/test2")}O>
+                <button className="joinButton" onClick={() => changeRoute("/room")}O>
                     Join Room
                 </button>
             </Card.Body>

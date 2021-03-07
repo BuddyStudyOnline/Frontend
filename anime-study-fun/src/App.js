@@ -11,8 +11,8 @@ function App() {
         {/* <Chatrooms /> */}
       <Switch>
         <Route exact path={"/"} component={Chatrooms}/>
-        <Route exact path={"/test"} component={Chatrooms}/>
-        <Route exact path={"/test2"} component={InCall}/>
+        <Route exact path={"/chatroom"} component={Chatrooms}/>
+        <Route exact path={"/room"} component={InCall}/>
       </Switch>
 
         {/* <InCall /> */}

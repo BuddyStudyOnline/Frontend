@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body {
-  background: linear-gradient(#202442, #161930);
+  background: linear-gradient(#202442, #1b1f3b);
   font-family: 'Quicksand', sans-serif !important;
   font-size: 16px;
   color: #fff!important;
@@ -76,7 +76,7 @@ h1 {
   transition: all 0.50s ease;
   animation: fadeInRight .50s ease forwards;
   color: #fff;
-  background-color: #2D325A;
+  background-color: #202442;
   border:none;
   outline: none;
   top: 0;
@@ -92,7 +92,7 @@ h1 {
   padding: 48px 0 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   transition: all 0.50s ease;
-  background-color: #2D325A;
+  background-color: #202442;
   opacity:0;
 }
 
