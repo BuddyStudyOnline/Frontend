@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import '../App.css';
+import {useHistory } from 'react-router-dom';
 
 const NavBar = (props) => {
     useEffect(() => {
@@ -12,26 +13,30 @@ const NavBar = (props) => {
             document.getElementById("sidebar").style.animation= "fadeAway .50s ease  forwards";
         }}
     );
+    const history = useHistory();
+
+    const changeRoute = (path) => {
+        history.replace({pathname: path})
+    };
 
     return (
         <Nav id="sidebar" className="col-md-12 sidebar" 
             activeKey="/home"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
         >
         <Nav.Item>
             <Nav.Link href="/home">DASHBOARD</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="chatrooms">CHATROOMS</Nav.Link>
+            <Nav.Link onClick={() => changeRoute("/chatroom")}>CHATROOMS</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="messages">MESSAGES</Nav.Link>
+            <Nav.Link >MESSAGES</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="myAccount">MY ACCOUNT</Nav.Link>
+            <Nav.Link>MY ACCOUNT</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="help">HELP</Nav.Link>
+            <Nav.Link>HELP</Nav.Link>
         </Nav.Item>
         </Nav>
     )  

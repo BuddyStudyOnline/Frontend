@@ -4,8 +4,15 @@ import test from '../img/download.svg';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import {useHistory } from 'react-router-dom';
 
 const RoomCard = (props) => {
+    const history = useHistory();
+
+    const changeRoute = (path: string) => {
+        history.replace({pathname: path})
+    };
+
     return (
         <Card className={"roomCard"} style={{ minWidth: "300px"}}>
             <Card.Body>
@@ -17,7 +24,7 @@ const RoomCard = (props) => {
                     </div>
                     
                 </Card.Text>
-                <button className="joinButton">
+                <button className="joinButton" onClick={() => changeRoute("/test2")}O>
                     Join Room
                 </button>
             </Card.Body>

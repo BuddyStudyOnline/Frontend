@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body {
-  background-color: #fffdfd!important;
+  background: linear-gradient(#202442, #161930);
   font-family: 'Quicksand', sans-serif !important;
   font-size: 16px;
-  color: #312F2F!important;
+  color: #fff!important;
 }
 
 h1 {
@@ -76,9 +76,10 @@ h1 {
   transition: all 0.50s ease;
   animation: fadeInRight .50s ease forwards;
   color: #fff;
-  background-color: #312F2F;
+  background-color: #2D325A;
   border:none;
   outline: none;
+  top: 0;
 }
 
 .sidebar {
@@ -91,7 +92,7 @@ h1 {
   padding: 48px 0 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   transition: all 0.50s ease;
-  background-color: #312F2F;
+  background-color: #2D325A;
   opacity:0;
 }
 
@@ -153,22 +154,28 @@ h1 {
 .roomCard {
   border: none!important;
   margin: 1rem;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3); 
-  box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3);
+  -webkit-box-shadow: 5px 5px 9px 6px rgba(32,36,66,0.5); 
+  box-shadow: 5px 5px 9px 6px rgba(32,36,66,0.5);
   transition: 0.2s ease
 }
 
 .roomCard:hover  {
   transform: translateY(-10px);
-  transition: 0.2s ease
+  transition: 0.2s ease;
 }
 
 .card {
-  border-radius: 20px!important;
+  border-radius:50px!important;
+  background: linear-gradient(#2D325A, #222649);
+  color: white;
+}
+
+.card-img-top {
+  border-radius: 50%!important;
 }
 
 .card-body {
-  padding: 0 0 15px 0 !important;
+  padding: 15px !important;
 }
 
 .card-title {
@@ -204,9 +211,9 @@ h1 {
   font-size: 30px;
   border-radius: 15px;
   border-style: none;
-  box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3);
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3); 
-  background-color: #84DCCF;
+  box-shadow: 5px 5px 5px 0px #202442;
+  -webkit-box-shadow: 5px 5px 5px 0px #202442; 
+  background-color: #4E7CFF;
   color: #fff;
   transition: 0.2s ease
 }
@@ -221,7 +228,7 @@ h1 {
   float: right;
   font-size: .85rem;
   border: none !important;
-  background-color: #84DCCF!important;
+  background-color: #4E7CFF!important;
   color: #fff;
   transition-duration: 0.4s;
   transition: 0.2s ease;
@@ -237,7 +244,7 @@ h1 {
   padding:5px;
   border-radius: 10px;
   border-style: none;
-  background-color: #84DCCF;
+  background-color: #4E7CFF;
   color: #fff;
   transition: 0.3s ease;
 }
@@ -245,4 +252,52 @@ h1 {
 .joinButton:hover {
   background-color: rgb(0, 138, 117)!important;
   transition: 0.3s ease;
+}
+
+/* Header to the left */
+.leftHeader {
+
+}
+#parent {
+  width: 80%;
+  height: 100vh;
+  position: relative
+}
+
+#child {
+  z-index: 500; 
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+}
+
+#other {
+  width:100%;
+  height:100vh;
+}
+
+#self {
+  width: 100%;
+  height: 100%;
+}
+
+/* Chat */
+#chat {
+  border: black 2px solid;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  position:fixed;
+  right:0;
+  top:0;
+}
+
+.chatMessage {
+  border: black 2px solid;
+  background-color: #4E7CFF;
+  text-align: left;
+  max-width: 200px;
+  border-radius: 10px;
 }
