@@ -62,7 +62,7 @@ h1 {
 }
 
 .nav-item:hover a{
-  color:#EF626C !important;
+  color:#F65164 !important;
 }
 
 
@@ -76,7 +76,7 @@ h1 {
   transition: all 0.50s ease;
   animation: fadeInRight .50s ease forwards;
   color: #fff;
-  background-color: #202442;
+  background-color: #171a33;
   border:none;
   outline: none;
   top: 0;
@@ -92,7 +92,7 @@ h1 {
   padding: 48px 0 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   transition: all 0.50s ease;
-  background-color: #202442;
+  background-color: #171a33;
   opacity:0;
 }
 
@@ -100,6 +100,7 @@ h1 {
   0% {
     opacity: 0;
     left: -90%;
+ 
   }
   100% {
     opacity: 1;
@@ -117,6 +118,7 @@ h1 {
     left: -90%;
   }
 }
+
 #sidebar-wrapper{
   min-height: 100vh !important;
   top: 0;
@@ -154,8 +156,8 @@ h1 {
 .roomCard {
   border: none!important;
   margin: 1rem;
-  -webkit-box-shadow: 5px 5px 9px 6px rgba(32,36,66,0.5); 
-  box-shadow: 5px 5px 9px 6px rgba(32,36,66,0.5);
+  -webkit-box-shadow: 5px 5px 9px 6px rgba(17, 20, 41, 0.5); 
+  box-shadow: 5px 5px 9px 6px rgba(17, 20, 41, 0.5);
   transition: 0.2s ease
 }
 
@@ -181,14 +183,13 @@ h1 {
 .card-title {
   margin-top: 10px;
   margin-bottom: 2px!important;
-  font-weight: 600!important;
+  font-weight: 700!important;
 }
 
 .card-text {
   text-align: center;
   font-size: .85rem;
 }
-
 
 .row {
   margin-left: 0 !important;
@@ -211,11 +212,14 @@ h1 {
   font-size: 30px;
   border-radius: 15px;
   border-style: none;
-  box-shadow: 5px 5px 5px 0px #202442;
-  -webkit-box-shadow: 5px 5px 5px 0px #202442; 
-  background-color: #4E7CFF;
+  -webkit-box-shadow: 5px 5px 9px 6px rgba(17, 20, 41, 0.5); 
+  box-shadow: 5px 5px 9px 6px rgba(17, 20, 41, 0.5);
+  background-color: #F65164;
   color: #fff;
-  transition: 0.2s ease
+  transition: 0.2s ease;
+  width: 150px;
+  padding: 10px;
+  line-height: 1.8rem;
 }
 
 .createButton:hover{
@@ -228,40 +232,36 @@ h1 {
   float: right;
   font-size: .85rem;
   border: none !important;
-  background-color: #4E7CFF!important;
+  background-color: #F65164!important;
   color: #fff;
   transition-duration: 0.4s;
   transition: 0.2s ease;
 }
 
 .createRoomPopupButton:hover {
-  background-color: rgb(0, 138, 117)!important;
+  background-color: #b92839!important;
   transition: 0.2s ease;
 }
 
 .joinButton {
   font-size: 1rem;
-  padding:5px;
+  padding: 5px 10px;
   border-radius: 10px;
   border-style: none;
-  background-color: #4E7CFF;
+  background-color: #F65164;
   color: #fff;
   transition: 0.3s ease;
 }
 
 .joinButton:hover {
-  background-color: rgb(0, 138, 117)!important;
+  background-color: #b92839!important;
   transition: 0.3s ease;
 }
 
-/* Header to the left */
-.leftHeader {
-
-}
 #parent {
   width: 80%;
   height: 100vh;
-  position: relative
+  position: relative;
 }
 
 #child {
@@ -283,21 +283,49 @@ h1 {
   height: 100%;
 }
 
+iframe {
+  border:none;
+}
+
 /* Chat */
 #chat {
-  border: black 2px solid;
   width: 20%;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   position:fixed;
   right:0;
   top:0;
 }
 
-.chatMessage {
-  border: black 2px solid;
-  background-color: #4E7CFF;
-  text-align: left;
-  max-width: 200px;
-  border-radius: 10px;
+.modal-dialog {
+  border-radius: 50px;
+}
+
+.close {
+  color: #fff!important;
+}
+
+.modal-content {
+  background: linear-gradient(#2D325A, #222649);
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #202442 #171a33;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #171a33;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #202442;
+  border-radius: 20px;
+  border: 3px solid #171a33;
 }

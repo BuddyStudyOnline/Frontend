@@ -9,7 +9,7 @@ import ChatMessage from "./ChatMessage";
 const Chat = (props) => {
     return (
         <div id="chat">
-            <ChatMessage self={true} key={0} message={"hello"}/>
+            <iframe width="100%" height="100%" src="http://localhost:4000"></iframe>
         </div>
     )
 };

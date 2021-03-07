@@ -12,7 +12,7 @@ const CreateRoom = () => {
     return(
         <>
         <button className="createButton" variant="primary" onClick={handleShow}>
-          Create Room
+          Create a Room
         </button>
   
         <Modal show={show} onHide={handleClose}>
@@ -24,7 +24,8 @@ const CreateRoom = () => {
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Room Name</Form.Label>
                     <Form.Control type="text" placeholder="Enter Room Name" />
-                    <Form.Label>Participants</Form.Label>
+
+                    <Form.Label className="mt-3">Participants</Form.Label>
                     <Form.Control as="select">
                         <option>2</option>
                         <option>3</option>
@@ -53,10 +54,10 @@ const CreateRoom = () => {
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
                 <Modal.Footer>
-                    <Button variant="outline-secondary" onClick={handleClose}>
+                    <Button variant="outline-light" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button className="createRoomPopupButton" type="submit" onClick={handleClose} class="createRoomSubmit">
+                    <Button className="createRoomPopupButton" type="submit" onClick={handleClose} class="createRoomSubmit" >
                         Submit
                     </Button>
                 </Modal.Footer>

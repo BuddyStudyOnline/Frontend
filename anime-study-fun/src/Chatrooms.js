@@ -35,7 +35,7 @@ const Chatrooms = () => {
             <Navbar state={open}/>
         </div>
         <div className="content">
-        <h1 className="leftHeader"> Chatrooms </h1>
+        <h1 className="leftHeader"> Study Rooms </h1>
 
         <Row md={6} xl={12} className="d-flex justify-content-center">
             <RoomCard name={"Math Help Room"} numOfUsers={"5"} maxCapacity={"10"} src={math}/> 

@@ -28,15 +28,14 @@ const InCall = () => {
             
             <div id="parent">
                 <Row className="d-flex justify-content-around">
-                    <iframe id="other" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="other" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" allow="autoplay" frameborder="0" ></iframe>
                 </Row>
                 <div id="child">
-                    <iframe id="self" width="543" height="327" src="https://www.youtube.com/embed/5qap5aO4i9A" allow="autoplay" frameborder="0" ></iframe>
+                    <iframe id="self" src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1" allow="autoplay" frameborder="0" ></iframe>
                 </div>
-            </div>
+            </div>  
 
             <Chat />
-
         </>
     )
 
