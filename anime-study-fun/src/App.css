@@ -154,8 +154,8 @@ h1 {
 .roomCard {
   border: none!important;
   margin: 1rem;
-  -webkit-box-shadow: 5px 5px 9px 6px rgba(32,36,66,0.5); 
-  box-shadow: 5px 5px 9px 6px rgba(32,36,66,0.5);
+  -webkit-box-shadow: 5px 5px 9px 6px rgba(17, 20, 41, 0.5); 
+  box-shadow: 5px 5px 9px 6px rgba(17, 20, 41, 0.5);
   transition: 0.2s ease
 }
 
