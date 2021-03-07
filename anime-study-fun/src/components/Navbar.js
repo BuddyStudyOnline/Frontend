@@ -24,7 +24,7 @@ const NavBar = (props) => {
             activeKey="/home"
         >
         <Nav.Item>
-            <Nav.Link href="/home">DASHBOARD</Nav.Link>
+            <Nav.Link onClick={() => changeRoute("/chatroom")}>DASHBOARD</Nav.Link>
         </Nav.Item>
         <Nav.Item>
             <Nav.Link onClick={() => changeRoute("/chatrooms")}>STUDY ROOMS</Nav.Link>
