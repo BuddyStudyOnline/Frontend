@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  background-color: #fffdfd!important;
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 16px;
+  color: #312F2F!important;
+}
+
+h1 {
+  margin-top:1rem!important;
+  font-weight: 700!important;
+}
+
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -28,6 +43,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +51,198 @@
   to {
     transform: rotate(360deg);
   }
+}
+.nav {
+  padding-left: 15px !important;
+}
+
+.nav-item a {
+  color: #fff !important;
+  transition-duration: 0.4s;
+}
+
+.nav-item:hover a{
+  color:#EF626C !important;
+}
+
+
+/* Navbar styling */
+.closeButton {
+  position: fixed;
+  z-index:4;
+  width: 50px;
+  border: none;
+  height: 50px;
+  transition: all 0.50s ease;
+  animation: fadeInRight .50s ease forwards;
+  color: #fff;
+  background-color: #312F2F;
+  border:none;
+  outline: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  transition: all 0.50s ease;
+  background-color: #312F2F;
+  opacity:0;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: -90%;
+  }
+  100% {
+    opacity: 1;
+    left:0;
+  }
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -90%;
+  }
+}
+#sidebar-wrapper{
+  min-height: 100vh !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin: auto;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  width: 15%;
+  position:fixed;
+  z-index:1;
+  overflow:auto;
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.roomCard {
+  border: none!important;
+  margin: 1rem;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3); 
+  box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3);
+  transition: 0.2s ease
+}
+
+.roomCard:hover  {
+  transform: translateY(-10px);
+  transition: 0.2s ease
+}
+
+.card {
+  border-radius: 20px!important;
+}
+
+.card-body {
+  padding: 0 0 15px 0 !important;
+}
+
+.card-title {
+  margin-top: 10px;
+  margin-bottom: 2px!important;
+  font-weight: 600!important;
+}
+
+.card-text {
+  text-align: center;
+  font-size: .85rem;
+}
+
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important
+}
+
+@media only screen and (max-width: 600px) {
+  #sidebar-wrapper{
+    width: 100%;
+  }
+}
+
+/* Create Room Button */
+.createButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  float: right;
+  font-size: 30px;
+  border-radius: 15px;
+  border-style: none;
+  box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(49,47,47,0.3); 
+  background-color: #84DCCF;
+  color: #fff;
+  transition: 0.2s ease
+}
+
+.createButton:hover{
+  transform: translateY(-10px);
+  transition: 0.2s ease
+}
+
+.createRoomPopupButton {
+  margin: auto;
+  float: right;
+  font-size: .85rem;
+  border: none !important;
+  background-color: #84DCCF!important;
+  color: #fff;
+  transition-duration: 0.4s;
+  transition: 0.2s ease;
+}
+
+.createRoomPopupButton:hover {
+  background-color: rgb(0, 138, 117)!important;
+  transition: 0.2s ease;
+}
+
+.joinButton {
+  font-size: 1rem;
+  padding:5px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #84DCCF;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.joinButton:hover {
+  background-color: rgb(0, 138, 117)!important;
+  transition: 0.3s ease;
 }
